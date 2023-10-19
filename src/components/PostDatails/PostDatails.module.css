@@ -1,0 +1,12 @@
+.Main {
+    width: 100vw;
+    height: 30vh;
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Main > h3 {
+    margin: 0;
+}
