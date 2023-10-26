@@ -1,0 +1,23 @@
+.Header {
+    display: flex;
+    height: 30vh;
+    background-color: blueviolet;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.Header a {
+    text-decoration: none;
+    color: aqua;
+}
+.Header a[class="active"] {
+    color: sandybrown;
+}
+
+.Button {
+    display: flex;
+    height: 10vh;
+    background-color: green;
+    align-items: center;
+    justify-content: space-around;
+}
