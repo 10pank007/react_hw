@@ -7,24 +7,23 @@ import {CommentsPage} from "./pages/CommentsPage";
 import {PostDetailsPage} from "./pages/PostDetailsPage";
 
 
-//{path: ":comments", element: <CommentsPage/>}
+
 const router = createBrowserRouter([
     {
         path: '/', element: <MainLayout/>, children: [
             {index: true, element: <Navigate to={"users"}/>},
             {
-                path: "users", element: <UsersPage/>, children: [
+                path: "users", element: <UsersPage/>
+            },
+            {
+                path: "user-details/:id", element: <UserDetailsPage/>, children: [
                     {
-                        path: "user-details/:id", element: <UserDetailsPage/>, children: [
-                            {
-                                path: "posts", element: <PostsPage/>, children: [
-                                    {path: 'posts-details/:postId', element: <PostDetailsPage/>, children: [
-                                            {path: 'comments-post-details', element: <CommentsPage/>}
-                                        ]}
-                                ]
-                            }
-                        ]
+                        element: <PostsPage/>
                     }
+                ]
+            }, {
+                path: 'posts-details/:postId', element: <PostDetailsPage/>, children: [
+                    { element: <CommentsPage/>}
                 ]
             }
         ]

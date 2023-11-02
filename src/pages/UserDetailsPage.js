@@ -4,6 +4,7 @@ import {UsersDetailsContainer} from "../components/UserDetailsContainter/UsersDe
 
 const UserDetailsPage = () => {
     let {id} = useParams();
+    console.log(id)
     return (
         <div>
             <UsersDetailsContainer id={id}/>

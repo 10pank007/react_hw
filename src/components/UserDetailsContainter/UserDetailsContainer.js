@@ -1,9 +1,10 @@
 import React from 'react';
-import {useNavigate} from "react-router-dom";
+
+import {PostsPage} from "../../pages/PostsPage";
 
 const UserDetailsContainer = ({user}) => {
     let {id, name, username, email, phone, website }= user;
-    let navigate = useNavigate();
+
     return (
         <div>
             <div>id : {id}</div>
@@ -12,7 +13,8 @@ const UserDetailsContainer = ({user}) => {
             <div>email : {email}</div>
             <div>phone : {phone}</div>
             <div>website : {website}</div>
-            <button onClick={()=> navigate(`posts`)}>post of current user</button>
+            <hr/>
+            <PostsPage/>
         </div>
     );
 };

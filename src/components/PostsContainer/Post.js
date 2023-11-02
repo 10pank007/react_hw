@@ -7,7 +7,7 @@ const Post = ({iter}) => {
     return (
         <div>
             <div>{title}</div>
-            <button onClick={()=> navigate(`posts-details/${id}`)}>details about post</button>
+            <button onClick={()=> navigate(`/posts-details/${id}`)}>details about post</button>
         </div>
     );
 };

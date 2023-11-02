@@ -8,7 +8,7 @@ const PostsPage = () => {
         <div>
             <Posts/>
             <hr/>
-            <Outlet/>
+
         </div>
     );
 };

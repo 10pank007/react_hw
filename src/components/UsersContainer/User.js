@@ -6,7 +6,7 @@ const User = ({iter}) => {
     return (
         <div>
             {iter.id} - {iter.name}
-            <button onClick={()=> {navigate(`user-details/${iter.id}`)}}>user details</button>
+            <button onClick={()=> {navigate(`/user-details/${iter.id}`)}}>user details</button>
         </div>
     );
 };
